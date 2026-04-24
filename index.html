@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoply - Elevate Your Everyday</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#facc15', 
+                        'primary-hover': '#eab308',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-gray-800 antialiased font-sans">
+
+    <header class="border-b border-gray-100 bg-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="text-primary text-2xl"><i class="fa-solid fa-bag-shopping"></i></div>
+                    <span class="font-bold text-2xl tracking-tight">Shoply<span class="text-primary">.</span></span>
+                </div>
+
+                <nav class="hidden md:flex space-x-8 font-medium text-sm text-gray-600">
+                    <a href="#" class="text-gray-900 border-b-2 border-primary pb-1">Home</a>
+                    <a href="#" class="hover:text-primary transition-colors">Shop</a>
+                    <a href="#" class="hover:text-primary transition-colors">Categories</a>
+                    <a href="#" class="hover:text-primary transition-colors">Deals</a>
+                    <a href="#" class="hover:text-primary transition-colors">About Us</a>
+                    <a href="#" class="hover:text-primary transition-colors">Contact</a>
+                </nav>
+
+                <div class="flex items-center space-x-6 text-gray-600">
+                    <button class="hover:text-primary transition"><i class="fa-solid fa-magnifying-glass text-lg"></i></button>
+                    <button class="hover:text-primary transition"><i class="fa-regular fa-user text-lg"></i></button>
+                    <button class="relative hover:text-primary transition">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                        <span id="cart-badge" class="absolute -top-2 -right-2 bg-primary text-gray-900 text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wide">New Collection</span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1]">
+                    Elevate Your <br> Everyday<span class="text-primary">.</span>
+                </h1>
+                <p class="text-lg text-gray-500 max-w-md leading-relaxed">
+                    Discover modern essentials crafted for comfort, style, and performance.
+                </p>
+                <div class="flex items-center gap-4 pt-4">
+                    <a href="#" class="bg-primary hover:bg-primary-hover text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors flex items-center gap-2 shadow-sm">
+                        Shop Now <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#" class="border border-gray-300 hover:border-gray-400 text-gray-700 font-semibold py-3 px-6 rounded-lg transition-colors shadow-sm">
+                        Explore Collection
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative h-[400px] lg:h-[500px] rounded-2xl bg-yellow-50 overflow-hidden flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yellow Backpack" class="object-cover h-full w-full mix-blend-multiply opacity-90 p-8 hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-6 flex gap-2">
+                    <div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="mb-8">
+            <span class="text-primary text-sm font-bold uppercase tracking-wider">Featured Products</span>
+            <div class="flex justify-between items-end mt-2">
+                <h2 class="text-3xl font-bold text-gray-900">Our Best Picks</h2>
+                <a href="#" class="text-sm font-semibold hover:text-primary transition flex items-center gap-2 text-gray-800">
+                    View All <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group border border-gray-100 rounded-xl p-4 hover:shadow-lg transition-shadow relative bg-gray-50 flex flex-col justify-between h-full">
+                <span class="absolute top-4 left-4 bg-primary text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded uppercase z-10">Sale</span>
+                <div class="h-48 flex items-center justify-center mb-4 mix-blend-multiply bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Headphones" class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">SoundCore Life Q30</h3>
+                    <p class="text-xs text-gray-500 mb-2">Headphones</p>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <div class="flex gap-2 items-center mb-1">
+                                <span class="font-bold text-lg text-gray-900">$79.99</span>
+                                <span class="text-xs text-gray-400 line-through">$99.99</span>
+                            </div>
+                            <div class="flex text-primary text-[10px] gap-0.5 items-center">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                <span class="text-gray-400 ml-1">(125)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn bg-primary hover:bg-primary-hover text-gray-900 w-8 h-8 rounded flex items-center justify-center transition">
+                            <i class="fa-solid fa-bag-shopping text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group border border-gray-100 rounded-xl p-4 hover:shadow-lg transition-shadow relative bg-gray-50 flex flex-col justify-between h-full">
+                <div class="h-48 flex items-center justify-center mb-4 mix-blend-multiply bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Watch" class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Minimalist Watch</h3>
+                    <p class="text-xs text-gray-500 mb-2">Accessories</p>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <div class="mb-1"><span class="font-bold text-lg text-gray-900">$59.99</span></div>
+                            <div class="flex text-primary text-[10px] gap-0.5 items-center">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                <span class="text-gray-400 ml-1">(86)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn bg-primary hover:bg-primary-hover text-gray-900 w-8 h-8 rounded flex items-center justify-center transition">
+                            <i class="fa-solid fa-bag-shopping text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group border border-gray-100 rounded-xl p-4 hover:shadow-lg transition-shadow relative bg-gray-50 flex flex-col justify-between h-full">
+                <div class="h-48 flex items-center justify-center mb-4 mix-blend-multiply bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mug" class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Stainless Steel Mug</h3>
+                    <p class="text-xs text-gray-500 mb-2">Kitchen</p>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <div class="mb-1"><span class="font-bold text-lg text-gray-900">$24.99</span></div>
+                            <div class="flex text-primary text-[10px] gap-0.5 items-center">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                <span class="text-gray-400 ml-1">(42)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn bg-primary hover:bg-primary-hover text-gray-900 w-8 h-8 rounded flex items-center justify-center transition">
+                            <i class="fa-solid fa-bag-shopping text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group border border-gray-100 rounded-xl p-4 hover:shadow-lg transition-shadow relative bg-gray-50 flex flex-col justify-between h-full">
+                <div class="h-48 flex items-center justify-center mb-4 mix-blend-multiply bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cap" class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Classic Dad Cap</h3>
+                    <p class="text-xs text-gray-500 mb-2">Apparel</p>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <div class="mb-1"><span class="font-bold text-lg text-gray-900">$19.99</span></div>
+                            <div class="flex text-primary text-[10px] gap-0.5 items-center">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <span class="text-gray-400 ml-1">(68)</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn bg-primary hover:bg-primary-hover text-gray-900 w-8 h-8 rounded flex items-center justify-center transition">
+                            <i class="fa-solid fa-bag-shopping text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-[#FFF8E7] rounded-2xl flex flex-col md:flex-row items-center justify-between overflow-hidden relative">
+            <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+            <div class="p-8 md:p-12 z-10 flex-1">
+                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-tag text-gray-900 text-xl"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Summer Sale <br> Up to <span class="text-primary">50%</span> Off</h2>
+                <p class="text-gray-600 mb-6">Limited time offer on selected items.</p>
+                <a href="#" class="inline-flex bg-gray-900 hover:bg-black text-white font-medium py-3 px-6 rounded-lg transition-colors items-center gap-2">
+                    Shop the Sale <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+            <div class="hidden md:block flex-1 h-[300px] relative z-10">
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Summer Sale" class="w-full h-full object-cover object-left mix-blend-multiply opacity-90 rounded-r-2xl" style="mask-image: linear-gradient(to right, transparent, black 30%); -webkit-mask-image: linear-gradient(to right, transparent, black 30%);">
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-b border-gray-100 py-10 mt-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:divide-x divide-gray-100">
+                <div class="flex items-center gap-4 lg:px-4">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-orange-500 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-sm text-gray-900">Free Shipping</h4>
+                        <p class="text-xs text-gray-500">On orders over $50</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 lg:px-4">
+                    <div class="w-12 h-12 rounded-full bg-yellow-50 text-yellow-500 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-sm text-gray-900">Easy Returns</h4>
+                        <p class="text-xs text-gray-500">30-day return policy</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 lg:px-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-sm text-gray-900">Secure Payment</h4>
+                        <p class="text-xs text-gray-500">100% secure checkout</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 lg:px-4">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-orange-500 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-sm text-gray-900">24/7 Support</h4>
+                        <p class="text-xs text-gray-500">We're here to help</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 pt-16 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="text-primary text-xl"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <span class="font-bold text-xl">Shoply<span class="text-primary">.</span></span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-6">Your go-to store for quality products at the best prices.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-200 hover:bg-primary text-gray-700 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-200 hover:bg-primary text-gray-700 flex items-center justify-center transition"><i class="fa-brands fa-instagram text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-200 hover:bg-primary text-gray-700 flex items-center justify-center transition"><i class="fa-brands fa-twitter text-sm"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Shop</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-primary transition">All Products</a></li>
+                        <li><a href="#" class="hover:text-primary transition">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Help</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-primary transition">FAQs</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Shipping</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Company</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-1">
+                    <h4 class="font-semibold text-gray-900 mb-4">Newsletter</h4>
+                    <form class="flex">
+                        <input type="email" placeholder="Email" class="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-1 focus:ring-primary text-sm">
+                        <button type="submit" class="bg-primary hover:bg-primary-hover text-gray-900 px-4 py-2 rounded-r-md transition"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-900 text-gray-400 py-6 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center text-xs">
+                <p>&copy; 2024 Shoply. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
